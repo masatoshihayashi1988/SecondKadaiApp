@@ -15,29 +15,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4y8-V6-Khg">
-                                <rect key="frame" x="184" y="421" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4y8-V6-Khg">
+                                <rect key="frame" x="184" y="539" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="p4v-Og-aOM" kind="show" id="kcC-p3-JSY"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例）　田中太郎" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ds-mF-wU3">
-                                <rect key="frame" x="116" y="362" width="183" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例）　田中太郎" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ds-mF-wU3">
+                                <rect key="frame" x="143" y="405" width="128" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力して下さい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-46-pib">
-                                <rect key="frame" x="120" y="295" width="174" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力して下さい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-46-pib">
+                                <rect key="frame" x="120" y="284" width="174" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4Ds-mF-wU3" firstAttribute="top" secondItem="Ngw-46-pib" secondAttribute="bottom" constant="100" id="340-FJ-cZb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ngw-46-pib" secondAttribute="trailing" constant="120" id="3Mk-AF-C8n"/>
+                            <constraint firstItem="4y8-V6-Khg" firstAttribute="top" secondItem="4Ds-mF-wU3" secondAttribute="bottom" constant="100" id="Gab-gC-I1n"/>
+                            <constraint firstItem="4Ds-mF-wU3" firstAttribute="centerX" secondItem="Ngw-46-pib" secondAttribute="centerX" id="WwK-Wh-yry"/>
+                            <constraint firstItem="4y8-V6-Khg" firstAttribute="centerX" secondItem="Ngw-46-pib" secondAttribute="centerX" id="pvo-ao-DSK"/>
+                            <constraint firstItem="Ngw-46-pib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="sG3-Tj-vp0"/>
+                            <constraint firstItem="Ngw-46-pib" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="zK0-1r-Gxs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -56,16 +62,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv2-W1-u2H">
-                                <rect key="frame" x="72" y="147" width="284" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv2-W1-u2H">
+                                <rect key="frame" x="60" y="150" width="294" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcA-Z9-eK7">
-                                <rect key="frame" x="184" y="366" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcA-Z9-eK7">
+                                <rect key="frame" x="184" y="370.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="LVk-3S-xWj" kind="unwind" unwindAction="unwind:" id="FgS-Ok-CJp"/>
@@ -73,6 +77,13 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lcA-Z9-eK7" firstAttribute="top" secondItem="Nv2-W1-u2H" secondAttribute="bottom" constant="200" id="AaJ-0w-VqI"/>
+                            <constraint firstItem="Nv2-W1-u2H" firstAttribute="top" secondItem="lQN-ui-geX" secondAttribute="top" constant="150" id="GwB-My-NY8"/>
+                            <constraint firstItem="lQN-ui-geX" firstAttribute="trailing" secondItem="Nv2-W1-u2H" secondAttribute="trailing" constant="60" id="LFK-C2-6BX"/>
+                            <constraint firstItem="Nv2-W1-u2H" firstAttribute="leading" secondItem="lQN-ui-geX" secondAttribute="leading" constant="60" id="auy-f7-8Ui"/>
+                            <constraint firstItem="lcA-Z9-eK7" firstAttribute="centerX" secondItem="Nv2-W1-u2H" secondAttribute="centerX" id="mtQ-bL-w5W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lQN-ui-geX"/>
                     </view>
                     <navigationItem key="navigationItem" id="cqR-u2-sgm"/>
